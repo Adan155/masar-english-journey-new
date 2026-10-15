@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#FEF08A" />
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1B4B" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Subtle compass / geometric coordinate ring -->
+  <circle cx="256" cy="256" r="180" stroke="white" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="6 8" />
+  <circle cx="256" cy="256" r="120" stroke="white" stroke-opacity="0.06" stroke-width="1.5" />
+
+  <!-- The MASAR Pathway Logo Geometry: Ascending stylized M with integrated dialogue bubble and star beacon -->
+  <g filter="url(#softShadow)">
+    <!-- Left Pillar / Upward Launch -->
+    <path d="M 124 372 L 124 212 C 124 186 145 166 172 166 C 187 166 200 174 208 186 L 256 260 L 304 186 C 312 174 325 166 340 166 C 367 166 388 186 388 212 L 388 372 C 388 382 380 390 370 390 C 360 390 352 382 352 372 L 352 232 L 278 344 C 273 351 265 356 256 356 C 247 356 239 351 234 344 L 160 232 L 160 372 C 160 382 152 390 142 390 C 132 390 124 382 124 372 Z" fill="url(#ribbonGrad)" />
+
+    <!-- Ascending Dynamic Golden Pathway Swoop that ascends forward through the M -->
+    <path d="M 120 380 C 180 395 240 330 280 270 C 310 220 340 180 388 150 C 374 140 350 142 332 158 C 290 196 254 286 190 316 C 160 330 134 342 120 380 Z" fill="url(#pathGrad)" opacity="0.95" />
+
+    <!-- Radiant Beacon / Star of Guidance at the peak of the path -->
+    <g transform="translate(388, 142)">
+      <circle cx="0" cy="0" r="18" fill="#FBBF24" />
+      <polygon points="0,-32 7,-10 30,-5 12,12 18,34 0,20 -18,34 -12,12 -30,-5 -7,-10" fill="#FEF08A" />
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+    </g>
+
+    <!-- Speech bubble tick accentuating English communication -->
+    <path d="M 388 340 L 416 370 L 388 362 Z" fill="#A78BFA" />
+  </g>
+</svg>
